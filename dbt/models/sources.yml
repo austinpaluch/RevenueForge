@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: revenueforge
+    schema: main
+    tables:
+      - name: dim_accounts
+      - name: fact_subscriptions
+      - name: fact_pipeline

@@ -1,0 +1,7 @@
+revenueforge:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      threads: 4
+      path: '../data/processed/revenueforge.duckdb'

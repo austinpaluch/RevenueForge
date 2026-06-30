@@ -1,0 +1,13 @@
+name: revenueforge
+version: '2.0'
+profile: revenueforge
+model-paths: ["models"]
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  revenueforge:
+    +materialized: table
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
